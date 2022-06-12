@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Together</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Navigation start -->
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="#">Study Together</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars">
+
+                    </i>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link">
+                        <a href="#notif"><i class="fa fa-bell "></i></a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#account"><i class="fa fa-user"></i></a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#logout"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navigation end -->
+
+    <!-- Main start -->
+    <section id="main">
+        <div class="row">
+            <div class="column-left">
+                <h3><i class="fa fa-user"></i>   Halo, User!<hr></h3>
+                <div class="sidebar">
+                    <div class="sidebar-link"><a href="#dashboard"><i class="fa-solid fa-chalkboard-user"></i> Dashboard</a></div>
+                    <div class="sidebar-link"><a href="#mycourses"><i class="fa-solid fa-book"></i> My Courses</a></div>
+                    <div class="sidebar-link"><a href="#mytasks"><i class="fa-solid fa-pencil"></i> My Tasks</a></div>
+                    <div class="sidebar-link"><a href="#myactivity"><i class="fa-solid fa-list-ul"></i> My Activity</a></div>
+                    <div class="sidebar-link"><a href="#discussion"><i class="fa-solid fa-user-group"></i> Discussion</a></div>
+                </div>
+            </div>
+
+             <!-- START MyCourse(ClW) -->
+            <div class="Courses">
+
+            <h1>My Courses / Courses Name</h1>
+            <!--<button class="btnFrm">Forum</button>
+            <button class="btnClW">Classwork</button>-->
+            <ul >
+                <li class="frm2"><a href="./MyCourse(Forum).html">Forum</a></li>
+                <li class="clW2"><a href="./MyCourse(ClW).html">Classwork</a></li>
+            </ul>
+
+                
+        </div>
+           <!-- <ul class="task">
+                <li><i class="fa fa-user"></i> New Task : Pemrograman Web - Web API</li>
+                <li><i class="fa fa-user"></i> New Material : Title</li>
+                <li><i class="fa fa-user"></i> New Task : Title</li>
+                <li><i class="fa fa-user"></i> Announcement</li>
+            </ul> -->
+        <div class="task">
+            <a href="#1">
+                <div class="box1">
+                <span><i class="fa fa-book fa-3x"></i></span>
+                </div>
+                <div class="box">
+                <h3 id="Mtext"> Pemrograman Web - Web API
+                    <p>Deadline 17 August 2022</p>
+                </h3>
+                </div>
+            </a>
+            <!--2-->
+            <a href="#2">
+                <div class="box1">
+                <span><i class="fa fa-book fa-3x"></i></span>
+                </div>
+                <div class="box">
+                <h3 id="Mtext"> Artificial Intelligence(AI) - Machine Learning
+                    <p>Deadline 20 August 2022</p>
+                </h3>
+                </div>
+            </a>
+            <!--3-->
+            <a href="#3">
+                <div class="box1">
+                <span><i class="fa fa-book fa-3x"></i></span>
+                </div>
+                <div class="box">
+                <h3 id="Mtext"> Pemrograman Basis Data - Transaction
+                    <p>Deadline 20 June 2022</p>
+                </h3>
+                </div>
+            </a>
+        </div>
+                
+            <!--<div class="txtTask">
+                <h3> New Task : Title
+                    <p> &ensp;&ensp; Date Upload</p>
+                </h3>
+                <h3> New Task : Title
+                    <p> &ensp;&ensp; Date Upload</p>
+                </h3>
+                <h3> New Task : Title
+                    <p> &ensp;&ensp; Date Upload</p>
+                </h3>
+                <h3> New Task : Title
+                    <p> &ensp;&ensp; Date Upload</p>
+                </h3>
+            </div>
+        </div>-->
+
+        </div>
+        <!-- end MyCourse(ClW) -->
+
+
+            <div class="column-right">
+                <h2>Column</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus
+                    venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget
+                    aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque
+                    tortor sed accumsan convallis.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Main end -->
+
+    <!-- Jquery -->
+    <script src="./js/jquery3.6.0.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="./js/main.js"></script>
+
+    <!-- Fontawesome JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"></script>
+</body>
+
+</html>
