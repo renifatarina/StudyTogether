@@ -1,0 +1,177 @@
+/* Ini CSS MyCourse(All) */
+
+.Courses{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 55px;
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+.Courses h1{
+    margin-left: 45px;
+    text-align: left;
+    font-size: xx-large;
+    color: #3D56B2;
+    margin-bottom: 10px;
+}
+
+.Courses li{
+    padding-left: 360px;
+}
+.Courses a{
+    border:none;
+    border-radius: 20px;
+    padding: 5px;
+    text-decoration: none;
+    display: inline-block;
+    flex-direction: row;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 120px;
+    float: left;
+}
+/*INI PUNYANYA FRM*/
+#main .Courses .frm a{
+    background-color: #5C7AEA;
+    color: var(--white);
+    margin-left: -20px;
+}
+#main .Courses .clW a{
+    color: black;
+    background-color: #ffffff;
+    border: 1px solid black;
+    margin-left: 20px;
+}
+/*INI PUNYANYA CLW*/
+#main .Courses .frm2 a{
+    color: black;
+    background-color: #ffffff;
+    border: 1px solid black;
+    margin-left: -20px;
+}
+#main .Courses .clW2 a{
+    background-color: #5C7AEA;
+    color: var(--white);
+    margin-left: 20px;
+}
+/*end*/
+.task{
+    display: block;
+    flex-grow: inherit;
+    padding: 3px;
+    padding-left: 305px;
+    padding-right: 59px;
+}
+#main .task a{
+    color: black;
+    padding: 0px;
+}
+.box {
+    background-color: var(--white);
+    border-radius: 50px;
+    border: 1px solid #5C7AEA;
+    padding: 1px;
+    padding-left: 10px;
+    color: black;
+    font-size: 16px;
+    margin: 4px 2px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    width: auto;
+  }
+.box1 {
+    margin-bottom: 15px;
+    float: left;
+    padding: 17px;
+    padding-top: 22px;
+    color: #3D56B2;
+    border-right: 0px;
+    width: auto;
+    
+}
+#main .task p{
+    font-size: 12px;
+    color: rgba(255, 0, 0, 0.774);
+}
+#main .task h3{
+    padding: 0px;
+    padding-bottom: 3px;
+    font-size: 15px;
+}
+
+/*INI PUNYANYA MyCourse UPLOAD*/
+.task .box2 {
+    float: inline-start;
+    background-color: var(--white);
+    border-radius: 20px;
+    border: 1px solid #5C7AEA;
+    padding-right: 30px;
+    color: black;
+    font-size: 16px;
+    margin: 4px 2px;
+    margin-bottom: 20px;
+    width: auto;
+    height: auto;
+}
+
+.task .box2 .upload {
+    text-align: center;
+    background-color: var(--white);
+    border-radius: 20px;
+    border: 1px solid #14279B;
+    border-style: dashed;
+    padding: 1px;
+    padding-right: 80px;
+    color: rgba(0, 0, 0, 0.699);
+    font-size: 13px;
+    margin: 4px;
+    margin-top: -20px;
+    margin-left: 30px;
+    width: auto;
+    height: auto;
+}
+.box2 li{
+    padding: 5px;
+    padding-top: 2px;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+.box2 li p{
+    padding: 5px;
+    margin-top: -10px;
+}
+
+#main .task .box2 p{
+    font-size: small;
+    color: rgba(0, 0, 0, 0.774);
+}
+
+.button {
+    border: none;
+    color: white;
+    border-radius: 20px;
+    padding: 5;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    margin: 20px 0px 20px 0px;
+    margin-left: auto;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+.button2 {
+    background-color: white; 
+    color: black; 
+    border: 1px solid #14279B;
+  }
+  
+.button2:hover {
+    background-color: #5C7AEA;
+    color: white;
+  }
+/* Ini CSS MyCourse(All) END */

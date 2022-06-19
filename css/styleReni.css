@@ -1,0 +1,263 @@
+/* my courses start */
+
+.column-right .column {
+    float: left;
+    width: 30%;
+    height: 300px;
+    margin: 15px;
+    background-color: var(--bluegray);
+    color: var(--white);
+    transition: transform .8s;
+    /* Animation */
+}
+
+.column-right .column:hover {
+    transform: scale(1.05);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.column-right .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column-right .column img {
+    width: 82%;
+    margin: 30px 30px 0 30px;
+}
+
+.column-right h1 {
+    margin-bottom: 0;
+    margin-left: 13px;
+    font-size: 30px;
+}
+
+.column-right h4 {
+    margin: 10px 30px;
+}
+
+.column-right .box {
+    background-color: var(--grey);
+    width: 82%;
+    height: 10px;
+    margin: 0 30px;
+}
+
+.column-right .inside-box {
+    background-color: #FFC947;
+    width: 50%;
+    height: 10px;
+}
+
+.column-right p {
+    margin: 10px 30px;
+    font-size: 14px;
+}
+
+
+/* my courses end */
+
+
+/* study online start */
+
+#studyonline,
+#quiz {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    color: var(--darkblue);
+}
+
+#studyonline h1 a,
+#quiz h1 a {
+    color: var(--darkblue);
+}
+
+#studyonline .row .column-bar-left,
+#quiz .row .column-bar-left {
+    float: left;
+    width: 70%;
+}
+
+#studyonline .row .column-bar-right,
+#quiz .row .column-bar-right {
+    float: right;
+    width: 5%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#studyonline .row .column-inside-left {
+    float: left;
+    width: 75%;
+    margin-right: 15px;
+}
+
+#studyonline .row .column-inside-left .box-video {
+    height: 70vh;
+    background-color: var(--grey);
+}
+
+#studyonline .row .column-inside-right {
+    float: right;
+    width: 20%;
+    border: 1px solid var(--darkblue);
+    padding: 0 10px;
+}
+
+#studyonline .row .column-inside-right .title .column {
+    float: left;
+    width: 50%;
+}
+
+#studyonline .row .column-inside-right .title .column.back {
+    padding: 20px 0;
+    text-align: right;
+}
+
+#studyonline .row .column-inside-right .chat {
+    margin-top: 70px;
+    height: 49vh;
+}
+
+#studyonline .row .column-inside-right .send {
+    padding: 5px;
+    text-align: center;
+}
+
+#studyonline hr {
+    border: 0.5px solid var(--darkblue);
+}
+
+#studyonline .row .column-inside-right .send button {
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+#studyonline .row button,
+#quiz .row button {
+    background-color: var(--darkblue);
+    color: var(--white);
+    border-style: none;
+}
+
+#studyonline .row .column-inside-right .send textarea {
+    border-style: none;
+    margin-right: 10px;
+}
+
+#studyonline .row .column-inside-right .send button {
+    margin-bottom: 10px;
+}
+
+#studyonline .row.btn button {
+    font-size: 20px;
+    padding: 0 30px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+
+/* study online end */
+
+
+/* quiz start */
+
+#quiz h4 {
+    color: black;
+}
+
+#quiz p {
+    color: black;
+    font-size: 15px;
+}
+
+#quiz .box {
+    border: 1px solid var(--darkblue);
+    padding: 0 20px;
+    border-radius: 20px;
+    margin: 15px 0;
+}
+
+#quiz .answer {
+    display: flex;
+    padding: 0;
+    margin: 10px 0;
+}
+
+#quiz .answer button {
+    flex-wrap: wrap;
+    width: 50px;
+    border-radius: 80%;
+    margin-right: 10px;
+}
+
+#quiz .tab {
+    margin-left: 10px;
+}
+
+#quiz .row .column-quiz {
+    float: left;
+    width: 75%;
+}
+
+#quiz .row .column-fill {
+    float: right;
+    width: 20%;
+}
+
+#quiz .row .fill-box {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid var(--darkblue);
+    margin-top: 15px;
+    padding: 0 5px;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+#quiz .row .fill-box div {
+    padding: 0 10px;
+    border: 1px solid var(--darkblue);
+    margin: 10px 5px;
+    border-radius: 30px;
+    width: 15px;
+    text-align: center;
+}
+
+#quiz .row .column-fill button {
+    border: 1px solid var(--darkblue);
+    padding: 5px 20px;
+    border-radius: 30px;
+    margin-top: 10px;
+    float: right;
+}
+
+.pagination {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: var(--darkblue);
+    color: white;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+/* quiz end */
