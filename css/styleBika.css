@@ -237,12 +237,21 @@ hr {
 }
 
 /*INI WARNA BUTTON*/
-#main .Task .putih a{
+#main .Task a{
     color: black;
     background-color: #ffffff;
     border: 1px solid black;
 }
-#main .Task .ungu a{
+#main .Task .assign a{
+    background-color: #5C7AEA;
+    color: var(--white);
+}
+
+#main .Task .missing2 a{
+    background-color: #5C7AEA;
+    color: var(--white);
+}
+#main .Task .done3 a{
     background-color: #5C7AEA;
     color: var(--white);
 }
