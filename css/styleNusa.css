@@ -1,3 +1,14 @@
+:root {
+    /* theme colors */
+    --darkblue: #14279B;
+    --bluegray: #3D56B2;
+    --blue: #5C7AEA;
+    --grey: #E6E6E6;
+    --white: #FFFFFF;
+    /* theme font-family */
+    --Poppin: 'Poppins', sans-serif;
+}
+
 /* Ini CSS MyCourse(All) */
 
 .Courses{

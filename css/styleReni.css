@@ -1,3 +1,13 @@
+:root {
+    /* theme colors */
+    --darkblue: #14279B;
+    --bluegray: #3D56B2;
+    --blue: #5C7AEA;
+    --grey: #E6E6E6;
+    --white: #FFFFFF;
+    /* theme font-family */
+    --Poppin: 'Poppins', sans-serif;
+}
 /* my courses start */
 
 .column-right .column {
@@ -53,6 +63,28 @@
 .column-right p {
     margin: 10px 30px;
     font-size: 14px;
+}
+
+#main .column-right .pagination {
+    margin-top: 30px;
+}
+
+#main .column-right .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+#main .column-right .pagination a.active {
+    background-color: var(--darkblue);
+    color: white;
+    border-radius: 5px;
+}
+
+#main .column-right .pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
 }
 
 

@@ -1,3 +1,14 @@
+:root {
+    /* theme colors */
+    --darkblue: #14279B;
+    --bluegray: #3D56B2;
+    --blue: #5C7AEA;
+    --grey: #E6E6E6;
+    --white: #FFFFFF;
+    /* theme font-family */
+    --Poppin: 'Poppins', sans-serif;
+}
+
 /*Login start*/
 
 .login {
@@ -33,27 +44,31 @@
     border-style: none;
     color: white;
 }
+
 /* Login end */
 
 /*Dashboard start*/
 
-#main .Todo {
-    float: right;
-    width: 12%;
-    padding: 20px 15px;
-    background-color: var(--blue);
-    height: 138vh;
+/* Reni edit start */
+#main .dashboard .column-task {
+    float: left;
+    width: 62%;
+    padding: 10px;
+    height: 300px;
 }
 
-#main .Task {
-    display: inline-block;
-    text-indent: 10px;
-    margin: 50px;
-    width: 56%;
-    padding: 15px;
-    text-align: left;
-    background-color: bisque;
-    line-height: 10px;
+#main .dashboard .column-todo {
+    float: right;
+    width: 15%;
+    padding: 20px 15px;
+    height: 148.5vh;
+    background-color: var(--blue);
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 #main .Todo h2 {
@@ -66,119 +81,87 @@
     font-size: smaller;
 }
 
-.Allbox-1 {
-    margin-left: 110px;
-    width: 100%;
-    height: auto;
+
+#main .Task {
+    display: inline-block;
+    text-indent: 10px;
+    margin: 50px 50px 20px 50px;
+    padding: 15px;
+    text-align: left;
+    background-color: bisque;
+    line-height: 10px;
+    align-content: center;
+    display: block;
 }
 
-.Allbox-2 {
-    margin-top: -630px;
-    margin-right: 20px;
-    margin-left: 380px;
-    width: 100%;
-    height: auto;
-}
-
-.kotak {
+.dashboard .column-task .row .column {
+    display: block;
+    width: 40%;
     background-color: var(--bluegray);
-    margin-left: 22%;
-    margin-top: 20px;
-    width: 20%;
-    height: 190px;
-}
-
-#item-1 {
-    display: inline-block;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    background-color: var(--white);
-    width: 83%;
-    height: 100px;
-}
-
-#item-2 {
-    display: inline-block;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    background-color: var(--white);
-    width: 83%;
-    height: 100px;
-}
-
-#item-3 {
-    display: inline-block;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    background-color: var(--white);
-    width: 83%;
-    height: 100px;
-}
-
-#item-4 {
-    display: inline-block;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    background-color: var(--white);
-    width: 83%;
-    height: 100px;
-}
-
-#item-5 {
-    display: inline-block;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    background-color: var(--white);
-    width: 83%;
-    height: 100px;
-}
-
-#item-6 {
-    display: inline-block;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    background-color: var(--white);
-    width: 83%;
-    height: 100px;
-}
-
-.kotak p {
     color: var(--white);
-    font-size: smaller;
-    padding: 90px 0;
+    margin: 30px;
+    
 }
 
-.kotak1 p {
-    color: var(--white);
-    font-size: smaller;
-    padding: 90px 0;
+.dashboard .column-task .row {
+    display: flex;
+    justify-content: center;
 }
 
-.progress {
-    background-color: var(--white);
-    margin-left: 20px;
-    height: 15px;
-    width: 83%;
+.dashboard .column-task .row .column img {
+    width: 82%;
+    margin: 30px 30px 0 30px;
 }
 
-
-.progress .load {
-    background-color: orange;
-    height: 15px;
-    width: 60%;
+.dashboard .column-task .row .column h4 {
+    margin: 10px 30px;
 }
+
+.dashboard .column-task .row .column .box {
+    background-color: var(--grey);
+    width: 82%;
+    height: 10px;
+    margin: 0 30px;
+}
+
+.dashboard .column-task .row .column .inside-box {
+    background-color: #FFC947;
+    width: 50%;
+    height: 10px;
+}
+
+.dashboard .column-task .row .column p {
+    margin: 10px 30px;
+    font-size: 14px;
+}
+
+#main .dashboard .column-task .pagination {
+    margin-top: 30px;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+}
+
+#main .dashboard .column-task .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+#main .dashboard .column-task .pagination a.active {
+    background-color: var(--darkblue);
+    color: white;
+    border-radius: 5px;
+}
+
+#main .dashboard .column-task .pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+/* Reni edit end */
+
 /* Dashboard end */
 
 /*Discussion*/
