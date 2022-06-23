@@ -10,14 +10,13 @@
 }
 
 /*Login start*/
-
 .login {
     background-color: var(--blue);
     width: 20%;
     margin: 150px;
     margin-left: auto;
-    margin-right: auto;
-    padding: 50px 35px;
+    margin-right: auto; 
+    padding: 20px 35px 50px 35px;
     display: block;
     border-radius: 5px;
 }
@@ -25,6 +24,8 @@
 .login h2 {
     text-align: center;
     color: white;
+    font-size: 50px;
+    padding:0;
 }
 
 .login input {
@@ -43,6 +44,7 @@
     background-color: var(--darkblue);
     border-style: none;
     color: white;
+    cursor: pointer;
 }
 
 /* Login end */
@@ -59,10 +61,10 @@
 
 #main .dashboard .column-todo {
     float: right;
-    width: 15%;
+    width: 17%;
     padding: 20px 15px;
     height: 148.5vh;
-    background-color: var(--blue);
+    background-color: var(--bluegray);
 }
 
 .row:after {
@@ -73,13 +75,20 @@
 
 #main .Todo h2 {
     color: white;
+    text-align: center;
 }
 
-#main .row .Todo p {
-    color: black;
-    font-weight: bold;
-    font-size: smaller;
+#main .row .Todo ol {
+    color: white;
+    /* font-weight: bold; */
+    font-size: 15px;
+    padding: 0 20px;
 }
+
+#main .row .Todo li{
+    color: white;
+}
+
 
 
 #main .Task {
@@ -181,11 +190,11 @@
 
 .right-content {
     float: right;
-    width: 35%;
-    height: 405px;
+    width: 25%;
+    height: 495px;
     /*margin-right: 10%;
     margin-top: 3.5%;*/
-    margin: 50px;
+    margin: 8px 50px 20px 50px;
     border-style: solid;
     border-width: 1px;
     border-radius: 10px;
@@ -202,6 +211,14 @@
     padding: 20px 20px;
 }
 
+.right-content .kirim {
+    margin: 10px 10px 10px 20px;
+}
+
+.right-content .kirim textarea{
+    border-style: none;
+}
+
 .right-content .kirim button {
     float: right;
     width: 15%;
@@ -210,19 +227,21 @@
     border-style: none;
     border-radius: 10px;
     background-color: var(--darkblue);
+    cursor: pointer;
 }
 
 .right-content .garis .garis-1 {
-    width: 410px;
+    margin-top: 50px;
+    width: 350px;
     height: 1px;
     border-style: none;
     background-color: black;
 }
 
 .right-content .garis .garis-2 {
-    width: 410px;
+    width: 350px;
     height: 1px;
-    margin-top: 67%;
+    margin-top: 95%;
     border-style: none;
     background-color: black;
 }
@@ -231,12 +250,13 @@
     float: left;
     background-color: var(--blue);
     padding: 100px;
-    margin: 50px;
-    height: 220px;
-    width: 30%;
+    margin: 20px 0 20px 60px;
+    height: 300px;
+    width: 50%;
     border-radius: 10px;
     border-width: 1px;
     display: flex;
+    position: relative;
 }
 
 .left-content .item1>div {
@@ -271,6 +291,29 @@
     flex-direction: column;
     margin-right: 70px;
     margin-left: 15px;
+}
+
+.left-content .item {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    flex-wrap: wrap;
+}
+
+.left-content .item button {
+    width: 40%;
+    padding: 60px;
+    margin: 10px;
+    border-radius: 40px;
+    border: 1px solid var(--darkblue);
+    background-color: var(--white);
+    font-size: 30px;
+    color: var(--darkblue);
+    font-weight: bold;
+    cursor: pointer;
 }
 
 /* Discussion end */

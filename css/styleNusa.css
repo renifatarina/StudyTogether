@@ -32,7 +32,7 @@
 .Courses li{
     padding-left: 360px;
 }
-.Courses a{
+.Courses li a{
     border:none;
     border-radius: 20px;
     padding: 5px;
@@ -57,6 +57,12 @@
     border: 1px solid black;
     margin-left: 20px;
 }
+
+#main .Courses a{
+    padding-right: 10px;
+    color: #3D56B2;
+}
+
 /*INI PUNYANYA CLW*/
 #main .Courses .frm2 a{
     color: black;
