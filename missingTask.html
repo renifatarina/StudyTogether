@@ -8,6 +8,7 @@
     <title>Study Together</title>
 
     <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/styleBika.css">
 
     <!-- Fontawesome CSS -->
@@ -29,19 +30,37 @@
                     </i>
                 </div>
             </div>
+            <!--FIXS DROPDOWN ISSUE-->
             <div>
                 <ul class="nav-items">
                     <li class="nav-link">
-                        <a href="#notif"><i class="fa fa-bell "></i></a>
+                        <div class="dropdown">
+                        <a href="#notif" class="dropbtn"><i class="fa fa-bell "></i></a>
+                            <div class="dropdown-content">
+                                <a class="notip" href="setting.html"><i class="fa-solid fa-gears"></i></a>
+                                <h4>&ensp;Notifications</h4>
+                                <ul>
+                                    <li>You have no notifications</li>
+                                </ul>
+                                <a class="notipBot" href="MyActivity.html">See All</a>
+                            </div>
+                        </div>
                     </li>
                     <li class="nav-link">
-                        <a href="#account"><i class="fa fa-user"></i></a>
+                        <div class="dropdown">
+                            <a href="#account" class="dropbtn"><i class="fa fa-user"></i></a>
+                            <div class="dropdown-content">
+                                <a href="profile.html"><i class="fas fa-user-circle"></i> &ensp;My Profile</a>
+                                <a href="setting.html"><i class="fa-solid fa-gears"></i>&ensp;Setting</a>
+                            </div>
+                        </div>
                     </li>
                     <li class="nav-link">
                         <a href="login.html"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
                     </li>
                 </ul>
             </div>
+            <!--END >> FIXS DROPDOWN ISSUE-->
         </div>
     </nav>
     <!-- Navigation end -->
@@ -76,7 +95,7 @@
             </div>
 
             <div class="task">
-                <a href="#1">
+                <a href="uploadFile.html">
                     <div class="box4">
                         <span><i class="fa-regular fa-circle-xmark fa-4x"></i></span>
                     </div>

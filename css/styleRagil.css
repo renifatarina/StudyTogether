@@ -61,7 +61,7 @@
 
 #main .dashboard .column-todo {
     float: right;
-    width: 17%;
+    width: 16%;
     padding: 20px 15px;
     height: 148.5vh;
     background-color: var(--bluegray);
@@ -167,6 +167,9 @@
 #main .dashboard .column-task .pagination a:hover:not(.active) {
     background-color: #ddd;
     border-radius: 5px;
+}
+#main .dashboard h3{
+    color: #3D56B2;
 }
 
 /* Reni edit end */
