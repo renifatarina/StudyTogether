@@ -19,6 +19,7 @@
     color: var(--white);
     transition: transform .8s;
     /* Animation */
+    padding-bottom: 10px;
 }
 
 .column-right .column:hover {
@@ -44,7 +45,7 @@
 }
 
 .column-right h4 {
-    margin: 10px 30px;
+    margin: 3px 30px 5px 30px;
 }
 
 .column-right .box {
@@ -66,7 +67,7 @@
 }
 
 #main .column-right .pagination {
-    margin-top: 30px;
+    margin-top: 5px;
 }
 
 #main .column-right .pagination a {
