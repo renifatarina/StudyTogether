@@ -70,7 +70,7 @@
         <div class="container">
             <div class="row">
                 <div class="column-bar-left">
-                    <h1><a href="forum.html"><i class="fa-solid fa-angle-left"></i></a> Study Online</h1>
+                    <h1><i class="fa-solid fa-angle-left" onclick="back()"></i> Study Online</h1>
                 </div>
                 <div class="column-bar-right">
                     <h3>01:00:00</h3>
@@ -92,7 +92,7 @@
                     <div class="chat"></div>
                     <div class="send">
                         <hr>
-                        <textarea name="" id="" cols="25" rows="2"></textarea>
+                        <textarea name="" id="" cols="30" rows="2"></textarea>
                         <button>Send</button>
                     </div>
                 </div>
@@ -101,8 +101,18 @@
                 <h3>Title of Material</h3>
             </div>
             <div class="row btn">
-                <a href=""><button>Notes</button></a>
-                <a href=""><button>File</button></a>
+                <a href="forum.html" target="__blank"><button>File</button></a>
+            </div>
+            <div id="note" class="row btn">
+                <div class="notes">
+                    <hr>
+                    <h2>Notes</h2>
+                    <textarea name="" id="note-text" cols="235" rows="20"></textarea>
+                    <button type="button" onclick="save()" style="float: right; margin: 10px;">Save</button>
+                    </div>
+                    <div id="mytext">
+                            
+                    </div>
             </div>
         </div>
     </section>

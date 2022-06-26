@@ -14,7 +14,8 @@
 
 /* Ini CSS MyTask(All) */
 
-.Task{
+.Task,
+.showTask{
     display: flex;
     flex-direction: column;
     padding-left: -30px;
@@ -23,11 +24,13 @@
     
 }
 
-.Task h1{
+.Task h1,
+.showTask h1{
     margin-left: 45px;
     text-align: left;
     font-size: xx-large;
     color: #3D56B2;
+    margin-bottom: 0;
 }
 
 .Task li{
@@ -43,7 +46,7 @@
     flex-grow: inherit;
     flex-direction: row;
     font-size: 16px;
-    margin: 4px 2px;
+    margin:0 2px;
     cursor: pointer;
     width: 150px;
     float: left;
@@ -67,6 +70,11 @@
 #main .Task .done3 a{
     background-color: #5C7AEA;
     color: var(--white);
+}
+
+#main .showTask p{
+    text-align: left; 
+    margin-left: 70px;
 }
 
 /*end*/
@@ -98,7 +106,6 @@
     float:right;
     padding: auto;
     padding-top: 20px;
-   
     padding-right: 20px;
     border-radius: 50%;
     color: #3D56B2;
