@@ -73,7 +73,8 @@
                     <h1><i class="fa-solid fa-angle-left" onclick="back()"></i> Study Online</h1>
                 </div>
                 <div class="column-bar-right">
-                    <h3>01:00:00</h3>
+                    <!--<h3>01:00:00</h3>-->
+                    <h3 id="countdown" onload="countdown()"></h3>
                 </div>
             </div>
             <div class="row">
@@ -107,7 +108,7 @@
                 <div class="notes">
                     <hr>
                     <h2>Notes</h2>
-                    <textarea name="" id="note-text" cols="235" rows="20"></textarea>
+                    <textarea name="" id="note-text" cols="190" rows="20"></textarea>
                     <button type="button" onclick="save()" style="float: right; margin: 10px;">Save</button>
                     </div>
                     <div id="mytext">

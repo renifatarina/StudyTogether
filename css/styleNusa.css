@@ -29,6 +29,7 @@
     margin-bottom: 10px;
 }
 
+
 .Courses li{
     padding-left: 360px;
 }
@@ -157,6 +158,11 @@
     margin-top: -10px;
     margin-left: -10px;
 }
+
+input{
+    margin-right: -65px;
+}
+
 .box2 li p{
     padding: 5px;
     margin-top: -10px;
@@ -191,4 +197,61 @@
     background-color: #5C7AEA;
     color: white;
   }
+
+/*Ini Punyanya New Material*/
+
+.box3{
+    background-color: var(--white);
+    border-radius: 50px;
+    border: 1px solid #5C7AEA;
+    padding: 1px;
+    padding-left: 30px;
+    color: black;
+    font-size: 16px;
+    margin: auto;
+    margin-left: 340px;
+    margin-right: 75px;
+    cursor: pointer;
+    width: auto;
+    height: 500px;
+}
+.Courses .allJudul{
+    display: flex;
+    float-direction: row;
+    text-align: left;
+    padding-left: 80px;
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
+.Courses .judul2{
+    color: red;
+}
+
+.allMaterial, .allMaterial2{
+    display: flex;
+    float: left;
+    padding-right: 1000px;
+    margin: 10px;
+}
+
+.box3 h3, .box3 p{
+    color: #070707;
+    margin-left: 15px;
+}
+.box3 .material{
+    background-color: rgba(150, 150, 127, 0.479);
+    padding: 2px;
+    padding-left: 15px;
+    border-radius: 10px 0px 0px 10px;
+}
+.box3 .material2{ 
+    background-color: rgba(150, 150, 127, 0.479);
+    width: 230px;
+    padding: 2px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 20px;
+    border-radius: 0px 10px 10px 0px;
+}
+/*End of New Material*/
 /* Ini CSS MyCourse(All) END */

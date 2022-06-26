@@ -110,6 +110,7 @@
 #quiz .row .column-bar-left {
     float: left;
     width: 70%;
+    cursor: pointer;
 }
 
 #studyonline .row .column-bar-right,

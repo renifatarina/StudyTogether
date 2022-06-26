@@ -193,14 +193,14 @@ nav.sticky {
     padding-bottom: 12px;
     margin-top: 2px;
     border: 1px solid #14279B;
-    border-bottom: 0;border-left: 0;
+    border-bottom: 0;border-left: 0;border-right: 0;
 }
 
 .dropdown-content h4{
     padding-bottom: 15px;
     margin-top: 12px;
     border: 1px solid #14279B;
-    border-top: 0;border-left: 0;
+    border-top: 0;border-left: 0;border-right: 0;
 }
 
 .dropdown-content a:hover {
@@ -264,6 +264,11 @@ hr {
     width: 80%;
     padding: 15px;
     height: 100vh;
+}
+
+.column-bar-right h3{
+    width: 200px;
+    margin-left: -40px;
 }
 
 .row:after {
