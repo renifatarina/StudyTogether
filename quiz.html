@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Study Together</title>
+    <title>Study Together | Quiz</title>
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.css">
@@ -29,19 +29,40 @@
                     </i>
                 </div>
             </div>
+            <!--FIXS DROPDOWN ISSUE-->
             <div>
                 <ul class="nav-items">
                     <li class="nav-link">
-                        <a href="#notif"><i class="fa fa-bell "></i></a>
+                        <div class="dropdown">
+                            <a href="#notif" class="dropbtn">
+                                <i class="fa fa-bell "></i> 
+                                <span class="badge">0</span>
+                            </a>
+                            <div class="dropdown-content notif">
+                                <a class="notip" href="setting.html"><i class="fa-solid fa-gears"></i></a>
+                                <h4>&ensp;Notifications</h4>
+                                <ul>
+                                    <li>You have no notifications</li>
+                                </ul>
+                                <a class="notipBot" href="MyActivity.html">See All</a>
+                            </div>
+                        </div>
                     </li>
                     <li class="nav-link">
-                        <a href="#account"><i class="fa fa-user"></i></a>
+                        <div class="dropdown">
+                            <a href="#account" class="dropbtn"><i class="fa fa-user"></i></a>
+                            <div class="dropdown-content acc">
+                                <a href="profile.html"><i class="fas fa-user-circle"></i> &ensp;My Profile</a>
+                                <a href="setting.html"><i class="fa-solid fa-gears"></i>&ensp;Setting</a>
+                            </div>
+                        </div>
                     </li>
                     <li class="nav-link">
                         <a href="login.html"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
                     </li>
                 </ul>
             </div>
+            <!--END >> FIXS DROPDOWN ISSUE-->
         </div>
     </nav>
     <!-- Navigation end -->
@@ -51,10 +72,11 @@
         <div class="container">
             <div class="row">
                 <div class="column-bar-left">
-                    <h1><a href="forum.html"><i class="fa-solid fa-angle-left"></i></a> Quiz/Task</h1>
+                    <h1><i class="fa-solid fa-angle-left" onclick="back()"></i> Quiz/Task</h1>
                 </div>
                 <div class="column-bar-right">
-                    <h3>01:00:00</h3>
+                    <!--<h3>01:00:00</h3>-->
+                    <h3 id="countdown" onload="countdown()"></h3>
                 </div>
             </div>
             <div class="row">
@@ -64,19 +86,19 @@
                             <h4>1. Apa nama buah yang warnanya merah?</h4>
                             <div class="tab">
                                 <div class="answer">
-                                    <button>a</button>
+                                    <button id="button1" onclick="setColor('button1', '#5C7AEA')">a</button>
                                     <p>Apel</p>
                                 </div>
                                 <div class="answer">
-                                    <button>b</button>
+                                    <button id="button2" onclick="setColor('button2', '#5C7AEA')">b</button>
                                     <p>Stoberi</p>
                                 </div>
                                 <div class="answer">
-                                    <button>c</button>
+                                    <button id="button3" onclick="setColor('button3', '#5C7AEA')">c</button>
                                     <p>Semangka</p>
                                 </div>
                                 <div class="answer">
-                                    <button>d</button>
+                                    <button id="button4" onclick="setColor('button4', '#5C7AEA')">d</button>
                                     <p>Naga</p>
                                 </div>
                             </div>
@@ -85,19 +107,19 @@
                             <h4>2. Apa nama buah yang warnanya merah?</h4>
                             <div class="tab">
                                 <div class="answer">
-                                    <button>a</button>
+                                    <button id="button5" onclick="setColor('button5', '#5C7AEA')">a</button>
                                     <p>Apel</p>
                                 </div>
                                 <div class="answer">
-                                    <button>b</button>
+                                    <button id="button6" onclick="setColor('button6', '#5C7AEA')">b</button>
                                     <p>Stoberi</p>
                                 </div>
                                 <div class="answer">
-                                    <button>c</button>
+                                    <button id="button7" onclick="setColor('button7', '#5C7AEA')">c</button>
                                     <p>Semangka</p>
                                 </div>
                                 <div class="answer">
-                                    <button>d</button>
+                                    <button id="button8" onclick="setColor('button8', '#5C7AEA')">d</button>
                                     <p>Naga</p>
                                 </div>
                             </div>
@@ -106,19 +128,19 @@
                             <h4>3. Apa nama buah yang warnanya merah?</h4>
                             <div class="tab">
                                 <div class="answer">
-                                    <button>a</button>
+                                    <button id="button9" onclick="setColor('button9', '#5C7AEA')">a</button>
                                     <p>Apel</p>
                                 </div>
                                 <div class="answer">
-                                    <button>b</button>
+                                    <button id="button10" onclick="setColor('button10', '#5C7AEA')">b</button>
                                     <p>Stoberi</p>
                                 </div>
                                 <div class="answer">
-                                    <button>c</button>
+                                    <button id="button11" onclick="setColor('button11', '#5C7AEA')">c</button>
                                     <p>Semangka</p>
                                 </div>
                                 <div class="answer">
-                                    <button>d</button>
+                                    <button id="button12" onclick="setColor('button12', '#5C7AEA')">d</button>
                                     <p>Naga</p>
                                 </div>
                             </div>
@@ -151,7 +173,7 @@
                         <div>14</div>
                         <div>15</div>
                     </div>
-                    <a href=""><button>Submit</button></a>
+                    <button onclick="submit()">Submit</button>
                 </div>
             </div>
         </div>

@@ -1,13 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-
-html,
-body {
-    margin: 0%;
-    box-sizing: border-box;
-    overflow-x: hidden;
-}
-
-
 :root {
     /* theme colors */
     --darkblue: #14279B;
@@ -20,201 +10,27 @@ body {
     --Poppin: 'Poppins', sans-serif;
 }
 
-/* global style start */
-* {
-    font-family: var(--Poppin);
-}
-
-.flex-row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.container {
-    margin: 0 5vw;
-}
-
-/* global style end */
-
-/* navbar start */
-.nav {
-    background: var(--darkblue);
-    padding: 0 2rem;
-    min-height: 8vh;
-    overflow: hidden;
-    transition: height 1s ease-in-out;
-    position: fixed;
-    /* Set the navbar to fixed position */
-    top: 0;
-    /* Position the navbar at the top of the page */
-    width: 100%;
-    /* Full width */
-    z-index: 1;
-}
-
-.nav a {
-    text-decoration: none;
-    color: var(--white)
-}
-
-.nav ul {
-
-    list-style-type: none;
-}
-
-nav.sticky {
-    background-color: var(--darkblue);
-    opacity: 0.9;
-}
-
-.nav .nav-menu {
-    justify-content: space-between;
-}
-
-.nav .toggle-collapse {
-    position: absolute;
-    top: 0%;
-    width: 90%;
-    cursor: pointer;
-    display: none;
-}
-
-.nav .toggle-collapse .toggle-icons {
-    display: flex;
-    justify-content: flex-end;
-    padding: 1.5rem 0;
-}
-
-.nav .toggle-collapse .toggle-icons i {
-    font-size: 1.4rem;
-    color: var(--white);
-}
-
-.collapse {
-    height: 15rem;
-}
-
-.nav .nav-items {
-    display: flex;
-    margin: 0 50px;
-
-}
-
-.nav .nav-items .nav-link {
-    padding: 1.2rem 1rem;
-    font-size: 1.1rem;
-    position: relative;
-    font-family: var(--Poppin);
-}
-
-/* 
-.nav .nav-items .nav-link:hover {
-    background-color: var(--grey);
-}
-
-.nav .nav-items .nav-link:hover a{
-    color: var(--darkblue);
-} */
-
-.nav .nav-brand a {
-    font-size: 1.5rem;
-    padding: 1rem 0;
-    display: block;
-    font-family: var(--Poppin);
-}
-
-/* navbar end */
-
-/* dashboard start */
-#dashboard {
-    height: 100vh;
-    display: flex;
-    background-color: var(--white);
-}
-
-/* dashboard end */
-
-/* main start */
-#main {
-    padding-top: 50px;
-}
-
-#main .column-left {
-    float: left;
-    width: 15%;
-    padding: 15px 20px;
-    background-color: var(--blue);
-    height: 100vh;
-    color: var(--white);
-}
-
-hr {
-    background-color: var(--white);
-}
-
-#main .column-left .sidebar div {
-    padding: 10px;
-}
-
-#main .column-right {
-    float: right;
-    width: 80%;
-    padding: 15px;
-    height: 100vh;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-#main a {
-    text-decoration: none;
-    color: var(--white);
-}
-
-#main ul {
-    list-style-type: none;
-}
-
-#main .sidebar .sidebar-link:hover {
-    background-color: var(--grey);
-    opacity: 80%;
-}
-
-#main .sidebar .sidebar-link:hover a{
-    color: var(--darkblue);
-} 
-
-
-
-/* @media screen and (max-width:600px) {
-    .column {
-        width: 100%;
-    }
-} */
-
 /* main end */
 
 /* Ini CSS MyTask(All) */
 
-.Task{
+.Task,
+.showTask{
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    padding-left: 020px;
-    padding-right: 55px;
+    padding-left: -30px;
+    padding-right: 20px;
     text-align: center;
     
 }
 
-.Task h1{
+.Task h1,
+.showTask h1{
     margin-left: 45px;
     text-align: left;
     font-size: xx-large;
     color: #3D56B2;
+    margin-bottom: 0;
 }
 
 .Task li{
@@ -230,7 +46,7 @@ hr {
     flex-grow: inherit;
     flex-direction: row;
     font-size: 16px;
-    margin: 4px 2px;
+    margin:0 2px;
     cursor: pointer;
     width: 150px;
     float: left;
@@ -254,6 +70,11 @@ hr {
 #main .Task .done3 a{
     background-color: #5C7AEA;
     color: var(--white);
+}
+
+#main .showTask p{
+    text-align: left; 
+    margin-left: 70px;
 }
 
 /*end*/
@@ -285,7 +106,6 @@ hr {
     float:right;
     padding: auto;
     padding-top: 20px;
-   
     padding-right: 20px;
     border-radius: 50%;
     color: #3D56B2;

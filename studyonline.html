@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Study Together</title>
+    <title>Study Together | Study Online</title>
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.css">
@@ -27,19 +27,40 @@
                     </i>
                 </div>
             </div>
+            <!--FIXS DROPDOWN ISSUE-->
             <div>
                 <ul class="nav-items">
                     <li class="nav-link">
-                        <a href="#notif"><i class="fa fa-bell "></i></a>
+                        <div class="dropdown">
+                            <a href="#notif" class="dropbtn">
+                                <i class="fa fa-bell "></i> 
+                                <span class="badge">0</span>
+                            </a>
+                            <div class="dropdown-content notif">
+                                <a class="notip" href="setting.html"><i class="fa-solid fa-gears"></i></a>
+                                <h4>&ensp;Notifications</h4>
+                                <ul>
+                                    <li>You have no notifications</li>
+                                </ul>
+                                <a class="notipBot" href="MyActivity.html">See All</a>
+                            </div>
+                        </div>
                     </li>
                     <li class="nav-link">
-                        <a href="#account"><i class="fa fa-user"></i></a>
+                        <div class="dropdown">
+                            <a href="#account" class="dropbtn"><i class="fa fa-user"></i></a>
+                            <div class="dropdown-content acc">
+                                <a href="profile.html"><i class="fas fa-user-circle"></i> &ensp;My Profile</a>
+                                <a href="setting.html"><i class="fa-solid fa-gears"></i>&ensp;Setting</a>
+                            </div>
+                        </div>
                     </li>
                     <li class="nav-link">
                         <a href="login.html"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
                     </li>
                 </ul>
             </div>
+            <!--END >> FIXS DROPDOWN ISSUE-->
         </div>
     </nav>
     <!-- Navigation end -->
@@ -49,10 +70,11 @@
         <div class="container">
             <div class="row">
                 <div class="column-bar-left">
-                    <h1><a href="forum.html"><i class="fa-solid fa-angle-left"></i></a> Study Online</h1>
+                    <h1><i class="fa-solid fa-angle-left" onclick="back()"></i> Study Online</h1>
                 </div>
                 <div class="column-bar-right">
-                    <h3>01:00:00</h3>
+                    <!--<h3>01:00:00</h3>-->
+                    <h3 id="countdown" onload="countdown()"></h3>
                 </div>
             </div>
             <div class="row">
@@ -71,7 +93,7 @@
                     <div class="chat"></div>
                     <div class="send">
                         <hr>
-                        <textarea name="" id="" cols="25" rows="2"></textarea>
+                        <textarea name="" id="" cols="30" rows="2"></textarea>
                         <button>Send</button>
                     </div>
                 </div>
@@ -80,8 +102,18 @@
                 <h3>Title of Material</h3>
             </div>
             <div class="row btn">
-                <a href=""><button>Notes</button></a>
-                <a href=""><button>File</button></a>
+                <a href="forum.html" target="__blank"><button>File</button></a>
+            </div>
+            <div id="note" class="row btn">
+                <div class="notes">
+                    <hr>
+                    <h2>Notes</h2>
+                    <textarea name="" id="note-text" cols="190" rows="20"></textarea>
+                    <button type="button" onclick="save()" style="float: right; margin: 10px;">Save</button>
+                    </div>
+                    <div id="mytext">
+                            
+                    </div>
             </div>
         </div>
     </section>

@@ -61,7 +61,7 @@
 
 #main .dashboard .column-todo {
     float: right;
-    width: 17%;
+    width: 16%;
     padding: 20px 15px;
     height: 148.5vh;
     background-color: var(--bluegray);
@@ -168,6 +168,9 @@
     background-color: #ddd;
     border-radius: 5px;
 }
+#main .dashboard h3{
+    color: #3D56B2;
+}
 
 /* Reni edit end */
 
@@ -188,10 +191,10 @@
     text-indent: 35px;
 }
 
-.right-content {
+#discussion .right-content {
     float: right;
     width: 25%;
-    height: 495px;
+    height: 550px;
     /*margin-right: 10%;
     margin-top: 3.5%;*/
     margin: 8px 50px 20px 50px;
@@ -212,7 +215,7 @@
 }
 
 .right-content .kirim {
-    margin: 10px 10px 10px 20px;
+    margin: 10px 10px 20px 20px;
 }
 
 .right-content .kirim textarea{
@@ -232,26 +235,26 @@
 
 .right-content .garis .garis-1 {
     margin-top: 50px;
-    width: 350px;
+    width: 400px;
     height: 1px;
     border-style: none;
     background-color: black;
 }
 
 .right-content .garis .garis-2 {
-    width: 350px;
+    width: 400px;
     height: 1px;
-    margin-top: 95%;
+    margin-top: 420px;
     border-style: none;
     background-color: black;
 }
 
-.left-content {
+#discussion .left-content {
     float: left;
     background-color: var(--blue);
     padding: 100px;
     margin: 20px 0 20px 60px;
-    height: 300px;
+    height: 350px;
     width: 50%;
     border-radius: 10px;
     border-width: 1px;
