@@ -46,50 +46,15 @@
     color: white;
     cursor: pointer;
 }
-
 /* Login end */
 
 /*Dashboard start*/
-
-/* Reni edit start */
 #main .dashboard .column-task {
     float: left;
     width: 62%;
     padding: 10px;
     height: 300px;
 }
-
-#main .dashboard .column-todo {
-    float: right;
-    width: 16%;
-    padding: 20px 15px;
-    height: 148.5vh;
-    background-color: var(--bluegray);
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-#main .Todo h2 {
-    color: white;
-    text-align: center;
-}
-
-#main .row .Todo ol {
-    color: white;
-    /* font-weight: bold; */
-    font-size: 15px;
-    padding: 0 20px;
-}
-
-#main .row .Todo li{
-    color: white;
-}
-
-
 
 #main .Task {
     display: inline-block;
@@ -172,12 +137,110 @@
     color: #3D56B2;
 }
 
-/* Reni edit end */
+.column-todo
+{
+    display: flex;
+    justify-content: center;
+    min-height: 155vh;
+    background-color: #2c48ad;
+    
+}
+
+.Todo
+{
+    position: relative;
+    width: 350px;
+}
+
+.Todo h2
+{
+    color: white;
+    padding: 10px 55px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.Todo ul
+{
+    position: relative;
+    padding: 20px;
+}
+
+.Todo ul li
+{
+    list-style: none;
+    padding: 15px 0;
+}
+
+.Todo ul li:last-child
+{
+    border-bottom: none;
+}
+
+.Todo ul li label 
+{
+    margin-top: -40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.Todo ul li label input
+{
+    visibility: hidden;
+    appearance: none;
+}
+
+
+.Todo ul li label input:checked ~ span
+{
+    background-color: white;
+    border:1px solid blue;
+}
+
+.Todo ul li label input:checked ~ span::before
+{
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.Todo ul li label p
+{
+    position: absolute;
+    color: var(--white);
+    font-size:small;
+}
+
+.Todo ul li label span
+{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.Todo ul li label span::before
+{
+    content: '';
+    position: absolute;
+    top: 5px;
+    width: 10px;
+    height: 5px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    transform: rotate(-40deg);
+}
+
 
 /* Dashboard end */
 
-/*Discussion*/
 
+/*Discussion start*/
 .waktu {
     float: right;
     color: darkblue;
@@ -318,7 +381,6 @@
     font-weight: bold;
     cursor: pointer;
 }
-
 /* Discussion end */
 
 /* @media screen and (max-width:600px) {
@@ -326,3 +388,11 @@
         width: 100%;
     }
 } */
+
+.disc h1 {
+    color: #3D56B2;
+    display: inline-flex;
+    margin-bottom: 0;
+    margin-left: 13px;
+    font-size: 30px;
+}

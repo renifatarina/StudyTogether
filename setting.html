@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/Logo.png" >
     <title>Setting</title>
 
     <!-- Custom CSS -->
@@ -20,7 +21,7 @@
     <nav class="nav">
         <div class="nav-menu flex-row">
             <div class="nav-brand">
-                <a href="dashboard.html">Study Together</a>
+                <a href="dashboard.html"><img src="./assets/Logo.png" alt="" width="30"> Study Together</a>
             </div>
             <div class="toggle-collapse">
                 <div class="toggle-icons">
@@ -36,13 +37,13 @@
                         <div class="dropdown">
                             <a href="#notif" class="dropbtn">
                                 <i class="fa fa-bell "></i> 
-                                <span class="badge">0</span>
+                                <span class="badge">1</span>
                             </a>
                             <div class="dropdown-content notif">
                                 <a class="notip" href="setting.html"><i class="fa-solid fa-gears"></i></a>
                                 <h4>&ensp;Notifications</h4>
                                 <ul>
-                                    <li>You have no notifications</li>
+                                    <a href="uploadFile.html"><li>You have new task <p style="font-size: 12px;">(Pemrograman Basis Data)</p></li></a>
                                 </ul>
                                 <a class="notipBot" href="MyActivity.html">See All</a>
                             </div>
@@ -85,18 +86,17 @@
             </div>
 
             <div class="column-right setting">
-                <h2>Setting Page</h2>
+                <h1>Setting Page</h1>
                 <div class="row">
                     <div class="column" style="background-color:#fff;">
-                        <button type="button">Account <i class="fa-solid fa-angle-right"></i></button>
-                        <button type="button">Notifications <i class="fa-solid fa-angle-right"></i></button>
-                        <button type="button">About <i class="fa-solid fa-angle-right"></i></button>
-                        <button type="button">Help and Support <i class="fa-solid fa-angle-right"></i></button>
-                        <button type="button">Log Out <i class="fa-solid fa-angle-right"></i></button>
+                        <button type="button">Account <i id="gbr" class="fa-solid fa-angle-right"></i></button>
+                        <button type="button">Notifications <i id="gbr2" class="fa-solid fa-angle-right"></i></button>
+                        <button type="button">About <i id="gbr3" class="fa-solid fa-angle-right"></i></button>
+                        <button type="button">Help and Support <i id="gbr4" class="fa-solid fa-angle-right"></i></button>
+                        <button type="button">Log Out <i id="gbr5" class="fa-solid fa-angle-right"></i></button>
 
                     </div>
                 </div>
-
             </div>
         </div>
     </section>

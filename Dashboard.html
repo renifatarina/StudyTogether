@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/Logo.png" >
+
     <title>StudyTogether | Dashboard</title>
 
     <!-- Custom CSS -->
@@ -20,7 +22,7 @@
     <nav class="nav">
         <div class="nav-menu flex-row">
             <div class="nav-brand">
-                <a href="dashboard.html">Study Together</a>
+                <a href="dashboard.html"><img src="./assets/Logo.png" alt="" width="30"> Study Together</a>
             </div>
             <div class="toggle-collapse">
                 <div class="toggle-icons">
@@ -36,13 +38,13 @@
                         <div class="dropdown">
                         <a href="#notif" class="dropbtn">
                             <i class="fa fa-bell "></i> 
-                            <span class="badge">0</span>
+                            <span class="badge">1</span>
                         </a>
                             <div class="dropdown-content notif">
                                 <a class="notip" href="setting.html"><i class="fa-solid fa-gears"></i></a>
                                 <h4>&ensp;Notifications</h4>
                                 <ul>
-                                    <li>You have no notifications</li>
+                                    <a href="uploadFile.html"><li>You have new task <p style="font-size: 12px;">(Database Programming)</p></li></a>
                                 </ul>
                                 <a class="notipBot" href="MyActivity.html">See All</a>
                             </div>
@@ -71,7 +73,7 @@
     <section id="main">
         <div class="row">
             <div class="column-left">
-                <h3><i class="fa fa-user"></i> Halo, User!
+                <h3><i class="fa fa-user"></i> Halo, Nusa!
                     <hr>
                 </h3>
                 <div class="sidebar">
@@ -90,43 +92,39 @@
                         <div class="Task">
                             <h3>New Task!</h3>
                             <div>
-                                <p>Tittle - Course Name - Date</p>
+                                <p>Exercises T-SQL - Database Programming - 17 June 2022</p>
                             </div>
                         </div>
                         <div class="row">
                             <div class="column">
-                                <img src="./assets/imgcourses.jpg" alt="" width="50">
-                                <h4><a href="forum.html">Courses Name</a></h4>
-                                <div class="box">
+                                <a href="forum.html"><img src="./assets/PBD.png" alt="" width="50"></a>
+                                <div class="box" style="margin-top: 10px;">
                                     <div class="inside-box"></div>
                                 </div>
-                                <p>50% complete</p>
+                                <p>60% complete</p>
                             </div>
                             <div class="column">
-                                <img src="./assets/imgcourses.jpg" alt="" width="50">
-                                <h4><a href="forum.html">Courses Name</a></h4>
-                                <div class="box">
+                                <a href="forum.html"><img src="./assets/AI.png" alt="" width="50"></a>
+                                <div class="box" style="margin-top: 10px;">
                                     <div class="inside-box"></div>
                                 </div>
-                                <p>50% complete</p>
+                                <p>60% complete</p>
                             </div>
                         </div>
                         <div class="row">
                             <div class="column">
-                                <img src="./assets/imgcourses.jpg" alt="" width="50">
-                                <h4><a href="forum.html">Courses Name</a></h4>
-                                <div class="box">
+                                <a href="forum.html"><img src="./assets/ANSI.png" alt="" width="50"></a>
+                                <div class="box" style="margin-top: 10px;">
                                     <div class="inside-box"></div>
                                 </div>
-                                <p>50% complete</p>
+                                <p>60% complete</p>
                             </div>
                             <div class="column">
-                                <img src="./assets/imgcourses.jpg" alt="" width="50">
-                                <h4><a href="forum.html">Courses Name</a></h4>
-                                <div class="box">
+                                <a href="forum.html"><img src="./assets/KAP.png" alt="" width="50"></a>
+                                <div class="box" style="margin-top: 10px;">
                                     <div class="inside-box"></div>
                                 </div>
-                                <p>50% complete</p>
+                                <p>60% complete</p>
                             </div>
                         </div>
                         <div class="pagination">
@@ -140,12 +138,29 @@
                     <div class="column-todo">
                         <div class="Todo">
                             <h2>TODO LIST!</h2>
-                            <ol>
-                                <li><a href="uploadFile.html" target="_blank"> Tugas Membuat Login Page</a></li>
-                                <li><a href="uploadFile.html" target="_blank"> Tugas Membuat Dashboard Page</a></li>
-                                <li><a href="uploadFile.html" target="_blank"> Tugas Membuat Discussion Page</a></li>
-                            </ol>
-                        </div>
+                            <ul>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="">
+                                    <p><a href="uploadFile.html" target="_blank">Exercises T-SQL</a></p>
+                                    <span></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="">                  
+                                    <p><a href="uploadFile2.html" target="_blank">Case Study Genetic Algorithm</a></p>             
+                                    <span></span>
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="">
+                                    <p><a href="uploadFile3.html" target="_blank">Exercises Flexbox</a></p>
+                                    <span></span>
+                                </label>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

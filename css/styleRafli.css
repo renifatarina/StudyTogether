@@ -51,3 +51,27 @@
     margin-left: 100px;
     display: inline-block;
 }
+
+h1 {
+    color: #3D56B2;
+    display: inline-flex;
+    margin-bottom: 0;
+    margin-left: 13px;
+    font-size: 30px;
+}
+
+#gbr{
+    padding-left: 1000px;
+}
+#gbr2{
+    padding-left: 960px;
+}
+#gbr3{
+    padding-left: 1022px;
+}
+#gbr4{
+    padding-left: 908px;
+}
+#gbr5{
+    padding-left: 1005px;
+}
