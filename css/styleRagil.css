@@ -247,12 +247,6 @@
     padding: 20px 50px;
 }
 
-.disc h1 {
-    text-align: left;
-    color: darkblue;
-    line-height: 60px;
-    text-indent: 35px;
-}
 
 #discussion .right-content {
     float: right;
@@ -393,6 +387,24 @@
     color: #3D56B2;
     display: inline-flex;
     margin-bottom: 0;
-    margin-left: 13px;
+    margin-top: 45px;
+    margin-left: 60px;
     font-size: 30px;
+}
+
+.column {
+    float: left;
+    width: 30%;
+    height: 300px;
+    margin: 15px;
+    background-color: var(--bluegray);
+    color: var(--white);
+    transition: transform .8s;
+    /* Animation */
+    padding-bottom: 10px;
+}
+
+.column:hover {
+    transform: scale(1.05);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }

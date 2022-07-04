@@ -167,6 +167,12 @@ nav.sticky {
     width: 250px;
 }
 
+.dropdown-content.notif #not{
+    margin-left: -40px;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
 .dropdown-content.acc {
     width: 150px;
 }

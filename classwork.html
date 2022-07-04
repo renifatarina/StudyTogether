@@ -44,7 +44,7 @@
                                 <a class="notip" href="setting.html"><i class="fa-solid fa-gears"></i></a>
                                 <h4>&ensp;Notifications</h4>
                                 <ul>
-                                    <a href="uploadFile.html"><li>You have new task <p style="font-size: 12px;">(Pemrograman Basis Data)</p></li></a>
+                                    <a id="not" href="uploadFile.html"><li>You have new task <p style="font-size: 12px;">(Pemrograman Basis Data)</p></li></a>
                                 </ul>
                                 <a class="notipBot" href="MyActivity.html">See All</a>
                             </div>
@@ -73,7 +73,7 @@
     <section id="main">
         <div class="row">
             <div class="column-left">
-                <h3><i class="fa fa-user"></i>   Halo, User!<hr></h3>
+                <h3><i class="fa fa-user"></i>   Halo, Nusa!<hr></h3>
                 <div class="sidebar">
                     <div class="sidebar-link"><a href="dashboard.html"><i class="fa-solid fa-chalkboard-user"></i> Dashboard</a></div>
                     <div class="sidebar-link"><a href="mycourses.html"><i class="fa-solid fa-book"></i> My Courses</a></div>
@@ -102,8 +102,12 @@
                     </div>
                     <div class="box">
                     <h3 id="Mtext"> Exercises T-SQL
-                        <p>Deadline 17 June 2022</p>
+                        <p>Deadline 15 July 2022</p>
                     </h3>
+                    </div>
+                    <div class="boxTime">
+                        <p id="countdownPw2"> Time Remaining</p>
+                        <p id="countdownPw" onload="countdownPw()"></p>
                     </div>
                 </a>
                 <!--2-->
@@ -113,8 +117,12 @@
                     </div>
                     <div class="box">
                     <h3 id="Mtext"> Exercises Cursor
-                        <p>Deadline 9 August 2022</p>
+                        <p>Deadline 17 July 2022</p>
                     </h3>
+                    </div>
+                    <div class="boxTime">
+                        <p id="countdownPw2"> Time Remaining</p>
+                        <p id="countdownAi" onload="countdownAi()"></p>
                     </div>
                 </a>
                 <!--3-->
@@ -124,8 +132,12 @@
                     </div>
                     <div class="box">
                     <h3 id="Mtext"> Exercises Trigger
-                        <p>Deadline 2 June 2022</p>
+                        <p>Deadline 20 July 2022</p>
                     </h3>
+                    </div>
+                    <div class="boxTime">
+                        <p id="countdownPw2"> Time Remaining</p>
+                        <p id="countdownPbd" onload="countdownPbd()"></p>
                     </div>
                 </a>
             </div>

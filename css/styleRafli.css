@@ -75,3 +75,29 @@ h1 {
 #gbr5{
     padding-left: 1005px;
 }
+
+.button {
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+    width: 100px;
+    padding-left: 28px;
+    display: flex;
+    font-size: 16px;
+    margin: 20px 0px 20px 0px;
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-left: auto;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+.button2 {
+    background-color: white; 
+    color: black; 
+    border: 1px solid #14279B;
+  }
+  
+.button2:hover {
+    background-color: #5C7AEA;
+    color: white;
+  }

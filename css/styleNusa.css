@@ -22,7 +22,7 @@
 }
 
 .Courses h1{
-    margin-left: 45px;
+    margin-left: 55px;
     text-align: left;
     font-size: xx-large;
     color: #3D56B2;
@@ -31,26 +31,33 @@
 
 
 .Courses li{
-    padding-left: 360px;
+    margin-left: 360px;
 }
 .Courses li a{
+    display: flex;
+    flex-direction: column;
+    float: left;
     border:none;
     border-radius: 20px;
     padding: 5px;
     text-decoration: none;
-    display: inline-block;
-    flex-direction: row;
     font-size: 16px;
     margin: 4px 2px;
-    cursor: pointer;
     width: 120px;
-    float: left;
 }
+
+
+#main .Courses a{
+    cursor: pointer;
+    padding-right: 10px;
+    color: #3D56B2;
+}
+
 /*INI PUNYANYA FRM*/
 #main .Courses .frm a{
     background-color: #5C7AEA;
     color: var(--white);
-    margin-left: 30px;
+    margin-left: 80px;
 }
 #main .Courses .clW a{
     color: black;
@@ -59,27 +66,28 @@
     margin-left: 20px;
 }
 
-#main .Courses a{
-    padding-right: 10px;
-    color: #3D56B2;
-}
-
 /*INI PUNYANYA CLW*/
 #main .Courses .frm2 a{
     color: black;
     background-color: #ffffff;
     border: 1px solid black;
-    margin-left: 30px;
+    margin-left: 80px;
 }
 #main .Courses .clW2 a{
     background-color: #5C7AEA;
     color: var(--white);
     margin-left: 20px;
 }
+
+#main .Courses li a:hover{
+    transition-duration: 0.4s;
+    background-color: #5c7beae7;
+    color: var(--white);
+}
 /*end*/
+/*Start Content Of Forum and Clw*/
 .task{
     display: block;
-    flex-grow: inherit;
     padding: 3px;
     padding-left: 305px;
     padding-right: 59px;
@@ -101,6 +109,10 @@
     cursor: pointer;
     width: auto;
   }
+.box:hover{
+    background-color: #3d56b213;
+    transform: scale(1.005);
+}
 .box1 {
     margin-bottom: 15px;
     float: left;
@@ -120,7 +132,7 @@
     padding-bottom: 3px;
     font-size: 15px;
 }
-
+/*end*/
 /*INI PUNYANYA MyCourse UPLOAD*/
 .task .box2 {
     float: inline-start;
@@ -143,7 +155,7 @@
     border: 1px solid #14279B;
     border-style: dashed;
     padding: 1px;
-    padding-right: 80px;
+    padding-right: 50px;
     color: rgba(0, 0, 0, 0.699);
     font-size: 13px;
     margin: 4px;
@@ -159,9 +171,11 @@
     margin-left: -10px;
 }
 
-input{
+.comment3{
     margin-right: -65px;
 }
+
+
 
 .box2 li p{
     padding: 5px;
@@ -174,12 +188,10 @@ input{
 }
 
 .button {
-    border: none;
     color: white;
     border-radius: 20px;
     padding: 5;
     text-align: center;
-    text-decoration: none;
     display: flex;
     font-size: 16px;
     margin: 20px 0px 20px 0px;
@@ -209,15 +221,13 @@ input{
     color: black;
     font-size: 16px;
     margin: auto;
-    margin-left: 340px;
-    margin-right: 75px;
-    cursor: pointer;
+    margin-left: 365px;
+    margin-right: 105px;
     width: auto;
-    height: 500px;
+    height: 850px;
 }
 .Courses .allJudul{
     display: flex;
-    float-direction: row;
     text-align: left;
     padding-left: 80px;
     margin-bottom: 20px;
@@ -227,7 +237,7 @@ input{
     color: red;
 }
 
-.allMaterial, .allMaterial2{
+.allMaterial{
     display: flex;
     float: left;
     padding-right: 1000px;
@@ -239,19 +249,112 @@ input{
     margin-left: 15px;
 }
 .box3 .material{
-    background-color: rgba(150, 150, 127, 0.479);
+    border-style: groove;
+    background-color: #5c7bea10;
+    border-right: 0;
     padding: 2px;
-    padding-left: 15px;
-    border-radius: 10px 0px 0px 10px;
+    padding-left: 7px;
+    padding-top: 7px;
+    border-radius: 20px 0px 0px 20px;
 }
 .box3 .material2{ 
-    background-color: rgba(150, 150, 127, 0.479);
+    border-style: groove;
+    background-color: #5c7bea10;
+    border-left: 0;
     width: 230px;
     padding: 2px;
-    padding-top: 10px;
-    padding-left: 15px;
+    padding-top: 7px;
+    padding-left: 13px;
     padding-right: 20px;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0px 20px 20px 0px;
+}
+.material2 p{
+    margin-top: -15px;
+}
+.material2 h4{
+    padding-left: 15px;
 }
 /*End of New Material*/
 /* Ini CSS MyCourse(All) END */
+
+/*Add Cooment and JS Confirm*/
+.chat{
+    display: inline-flex;
+    float: right;
+    padding: 10px;
+}
+
+.chat2{
+    display: inline-flex;
+    float: left;
+
+}
+
+#toggle, #toggle2{
+    margin-left: 15px;
+}
+#mytext, #mytext2{
+    padding-top: 2px;
+}
+#mytext2, #toggle2{
+    padding-bottom: 15px;
+}
+
+.comment2{
+    border-style: groove;
+    border-radius: 20px;
+}
+
+.comment2 .tab{
+    width: 600px;
+    padding-left: 8px;
+}
+
+table{
+    margin-top: -15px;
+}
+input{
+    border-radius: 20px;
+    padding: 0.375rem 0.9375rem 0.375rem;
+    padding-top: 5px;
+    width: 510px;
+}
+
+#myfile{
+    color: red;
+    cursor: pointer;
+    margin-right: -295px;
+}
+
+
+
+.comment2 .icn{
+    margin-right: 20px;
+    margin-left: 30px;
+}
+#usr{
+    color: #14279B;
+    margin-left: 8px;
+}
+/*End of Add Cooment and JS Confirm*/
+
+/* Add DL Time */
+.boxTime{
+    margin-bottom: 15px;
+    float: right;
+    padding: 17px;
+    margin-right: 20px;
+    margin-top: -120px;
+    border-right: 0px;
+    width: auto;
+}
+
+#countdownPw, #countdownPbd, #countdownAi{
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+#main .boxTime #countdownPw2{
+    font-size: 13px;
+}
+/* End of Add DL Time */

@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/Logo.png">
     <title>Study Together | My Activity</title>
 
     <!-- Custom CSS -->
@@ -15,6 +14,8 @@
 
     <!-- Fontawesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css">
 
 </head>
 
@@ -38,17 +39,14 @@
                     <li class="nav-link">
                         <div class="dropdown">
                             <a href="#notif" class="dropbtn">
-                                <i class="fa fa-bell "></i>
-                                <span class="badge">1</span>
+                                <i class="fa fa-bell "></i> 
+                                <span class="badge">0</span>
                             </a>
                             <div class="dropdown-content notif">
                                 <a class="notip" href="setting.html"><i class="fa-solid fa-gears"></i></a>
                                 <h4>&ensp;Notifications</h4>
                                 <ul>
-                                    <a href="uploadFile.html">
-                                        <li>You have new task <p style="font-size: 12px;">(Pemrograman Basis Data)</p>
-                                        </li>
-                                    </a>
+                                    <a id="not" href="uploadFile.html"><li>You have new task <p style="font-size: 12px;">(Pemrograman Basis Data)</p></li></a>
                                 </ul>
                                 <a class="notipBot" href="MyActivity.html">See All</a>
                             </div>
@@ -77,22 +75,16 @@
     <section id="main">
         <div class="row">
             <div class="column-left">
-                <h3><i class="fa fa-user"></i> Halo, User!
+                <h3><i class="fa fa-user"></i> Halo, Nusa!
                     <hr>
                 </h3>
                 <div class="sidebar">
-                    <div class="sidebar-link"><a href="dashboard.html"><i class="fa-solid fa-chalkboard-user"></i>
-                            Dashboard</a></div>
-                    <div class="sidebar-link"><a href="mycourses.html"><i class="fa-solid fa-book"></i> My Courses</a>
-                    </div>
-                    <div class="sidebar-link"><a href="myTask.html"><i class="fa-solid fa-pencil"></i> My Tasks</a>
-                    </div>
-                    <div class="sidebar-link"><a href="myActivity.html"><i class="fa-solid fa-list-ul"></i> My
-                            Activity</a></div>
-                    <div class="sidebar-link"><a href="discussion.html"><i class="fa-solid fa-user-group"></i>
-                            Discussion</a></div>
-                    <div class="sidebar-link"><a href="myNotes.html"><i class="fa-solid fa-bookmark"></i> My Notes</a>
-                    </div>
+                    <div class="sidebar-link"><a href="dashboard.html"><i class="fa-solid fa-chalkboard-user"></i> Dashboard</a></div>
+                    <div class="sidebar-link"><a href="mycourses.html"><i class="fa-solid fa-book"></i> My Courses</a></div>
+                    <div class="sidebar-link"><a href="myTask.html"><i class="fa-solid fa-pencil"></i> My Tasks</a></div>
+                    <div class="sidebar-link"><a href="myActivity.html"><i class="fa-solid fa-list-ul"></i> My Activity</a></div>
+                    <div class="sidebar-link"><a href="discussion.html"><i class="fa-solid fa-user-group"></i> Discussion</a></div>
+                    <div class="sidebar-link"><a href="myNotes.html"><i class="fa-solid fa-bookmark"></i> My Notes</a></div>
                 </div>
             </div>
 
@@ -102,44 +94,69 @@
                 <h1><a href="forum.html"><i class="fa-solid fa-angle-left"></i></a> New Material</h1>
                 <div class="allJudul">
                     <div class="judul1">
-                        <p>Artificial Intelligence(AI) - Machine Learning&ensp;|&ensp;</p>
-                    </div>
-                    <div class="judul2">
-                        <p>02 June 2022</p>
-                    </div>
+                <p>Artificial Intelligence(AI) - Module Cursor&ensp;|&ensp;</p>
+            </div>
+            <div class="judul2">
+            <p>02 July 2022</p>
+        </div>
                 </div>
             </div>
 
             <div class="box3">
                 <h3 id="Dtext">Deskripsi</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea culpa nemo, optio nihil molestias
-                    placeat omnis asperiores sequi. Voluptatibus, doloribus? Vitae aliquam laboriosam ipsa quasi vel
-                    enim quis sequi non tempore eligendi placeat eveniet, dolor dolores blanditiis sit, saepe eaque
-                    recusandae! Commodi suscipit sit facere blanditiis architecto sed! Quae, placeat.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea culpa nemo, optio nihil molestias placeat omnis asperiores sequi. Voluptatibus, doloribus? Vitae aliquam laboriosam ipsa quasi vel enim quis sequi non tempore eligendi placeat eveniet, dolor dolores blanditiis sit, saepe eaque recusandae! Commodi suscipit sit facere blanditiis architecto sed! Quae, placeat.</p>
                 <div class="allMaterial">
-                    <div class="material">
-                        <p><object type="application/pdf" data="./assets/Pertemuan 9_ANN.pdf" width="150"
-                                height="100"></object></p>
-                    </div>
-                    <div class="material2">
-                        <p>Materi Pertemuan 9.pdf</p>
-                    </div>
+                <div class="material">
+                    <p><iframe src="https://drive.google.com/file/d/1XMn17jeJOyO7gGjRW9uy_7wQz2QfyG8J/preview" width="320" height="150"></iframe> </p>
                 </div>
-                <div class="allMaterial">
-                    <div class="material">
-                        <p><iframe width="150" height="100" src="https://www.youtube.com/embed/1E59f7Ul_78"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe></p>
-                    </div>
+                <div class="material2">
+                    <h4>Materi Pertemuan 9.pdf</h4>
+                    <p>Pdf</p>
+                </div>
+                </div>
 
-                    <div class="material2">
-                        <p> Video Materi Pertemuan 9</p>
+                <div class="allMaterial">      
+                    <div class="material">
+                        <p><iframe width="320" height="150" src="https://www.youtube.com/embed/1E59f7Ul_78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
                     </div>
+                <div class="material2">
+                    <h4> Video Materi Pertemuan 9</h4>
+                    <p>Video</p>
                 </div>
             </div>
+            <div class="allMaterial">
+                <!--START OF ADD CHAT's-->
+                <div class="comment2">
+                    <div class="atas">
+                    <h4 class="tab"><i id="lbl" style="color: #14279B;" class="fa fa-user-group"></i> Private comments</h4>
+                </div>
+                <table>      
+                <tr>
+                    <td>
+                        <div id="usr"><i class="fa fa-user-circle fa-2x"></i></div>
+                    </td>
+                    <td>   
+                    <input id="note-text" type="text" class="comment3" placeholder="Add Comment Here.." ></input>
+                    </td>
+                    <td>
+                        <a title="Post" href="#"><p class="icn" onclick="showT()">
+                        <svg focusable="false" width="22"  viewBox="2 0 24 21" class=" NMm5M hhikbc"><path d="M2 3v18l20-9L2 3zm2 11l9-2-9-2V6.09L17.13 12 4 17.91V14z"></path></svg></p></a>
+                    </td>
+                </tr>
+                </table>
 
-        </div>
+                <div class="chat">
+                    <div id="mytext"></div>
+                    <div id="toggle" style="display: none;"><i class="fa fa-user-circle fa-2x" style="color: #14279B;">&ensp;</i></div>
+                </div>
+                <div class="chat2">
+                    <div id="toggle2" style="display: none;"><i class="fa fa-user-circle fa-2x" style="color: #5C7AEA;"></i></div>
+                    <div id="mytext2" style="display: none;">&ensp;Yang Bener?</div>
+                </div>
+                </div>   
+            </div>
+        <!--END OF ADD CHAT's-->
+            </div>
         <!-- end MyCourse -->
         </div>
     </section>
